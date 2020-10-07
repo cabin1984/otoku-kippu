@@ -32,7 +32,7 @@ Things you may want to cover:
  条件を指定して、合致する「お得きっぷ」が検索できる
 
 # URL
- 
+ 後日記載
 
 # 利用方法
  
@@ -71,3 +71,6 @@ ER図
 https://gyazo.com/0fcfb8c1ecc7ed95ae68b93cef447fae
 
 # ローカルでの動作方法
+
+* 現状の開発環境は Ruby / Ruby on Rails / MySQL / GitHub / Heroku / Visual Studio Code /
+* その他は後日記載
