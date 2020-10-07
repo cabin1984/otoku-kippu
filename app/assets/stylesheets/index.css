@@ -1,0 +1,59 @@
+.ticket-logo{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+h1{
+  text-align: center;
+  background-color: yellow;
+  font-size: 50px;
+}
+
+h2{
+  text-align: center;
+  background-color: tomato;
+  font-size: 30px;
+}
+
+.ticket-box{
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ticket-title {
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  background-color: blue;
+  min-width: 170px;
+  margin-top: 10px;
+}
+
+.select-box {
+  height: 50px;
+  width: 25%;
+  font-size: 20px;
+  background-color: #f5f5f5;
+}
+
+.btn {
+  background: crimson;
+  border: 1px solid crimson;
+  color: white;
+  width: 15%;
+  height: 50px;
+  font-size: 35px;
+  margin-top: 30px;
+  margin-bottom: 4vh;
+}
+
+.ticket-image{
+  width: 20vw;
+  height: 25vh;
+}
