@@ -1,0 +1,37 @@
+<%= form_with model: @ticket, url:tickets_path, local: true do |f| %>
+<div class="ticket">
+  <div class="ticket-logo">
+    <%= image_tag "IMG_20190318_141726.jpg", class:"ticket-image" %>
+    <%= image_tag "IMG_20161206_165315.jpg", class:"ticket-image" %>
+    <%= image_tag "PIC00008F.JPG", class:"ticket-image" %>
+    <%= image_tag "ESgyCfRUUAEEF73.jpeg", class:"ticket-image" %>
+    <%= image_tag "IMG_20180906_112710.jpg", class:"ticket-image" %> 
+    <%= image_tag "IMG_20180928_190155.jpg", class:"ticket-image" %>
+    <%= image_tag "IMG_20180906_112615.jpg", class:"ticket-image" %> 
+    <%= image_tag "DSC_0020.JPG", class:"ticket-image" %>
+    <%= image_tag "PIC00008C.JPG", class:"ticket-image" %>
+    <%= image_tag "PIC00008D.JPG", class:"ticket-image" %>
+    <%= image_tag "IMG_20161206_154748.jpg", class:"ticket-image" %>
+    <%= image_tag "IMG_20180211_140053.jpg", class:"ticket-image" %>
+    <%= image_tag "IMG_20161206_164518.jpg", class:"ticket-image" %>
+    <%= image_tag "DSC_0053.JPG", class:"ticket-image" %>
+    <%= image_tag "PIC000088.JPG", class:"ticket-image" %>
+    <%= image_tag "IMG_20180211_123458.jpg", class:"ticket-image" %>
+    <%= image_tag "DSC_0019.JPG", class:"ticket-image" %>
+    <%= image_tag "DSC_0025.JPG", class:"ticket-image" %>
+    <%= image_tag "DSC_0009.JPG", class:"ticket-image" %>
+    <%= image_tag "DSC_0042.JPG", class:"ticket-image" %>
+  </div>
+  <div class="ticket-box">
+    <h1>首都圏 鉄道お得きっぷの旅</h1>
+    <h2>お得きっぷを検索する</h2>
+    <div class="ticket-title">誰と？</div>
+    <%= f.collection_select(:user_id, User.all, :id, :name, {}, {class:"select-box"}) %>
+    <div class="ticket-title">どんなところへ？</div>
+    <%= f.collection_select(:situation_id, Situation.all, :id, :name, {}, {class:"select-box"}) %>
+    <div class="ticket-title">いくらで？</div>
+    <%= f.collection_select(:price_id, Price.all, :id, :name, {}, {class:"select-box"}) %>
+    <%= link_to "実行する", tickets_path, class:"btn" %>
+  </div>
+</div>
+<% end %>

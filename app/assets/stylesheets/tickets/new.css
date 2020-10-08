@@ -50,7 +50,8 @@ h2{
   height: 50px;
   font-size: 35px;
   margin-top: 30px;
-  margin-bottom: 4vh;
+  text-align: center;
+  text-decoration: none;
 }
 
 .ticket-image{

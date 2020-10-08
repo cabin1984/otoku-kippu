@@ -1,37 +1,32 @@
+<%= stylesheet_link_tag "tickets/index", media: "all" %>
+
 <%= form_with model: @ticket, url:tickets_path, local: true do |f| %>
-<div class="ticket">
-  <div class="ticket-logo">
+<h1 class="solid_line">乗るだけじゃない！ 食べて遊んで1日満喫！ お得きっぷの旅！！</h1>
+<div class="ticket-discription">
+  <div class="misaki">
+    <label class="p1">みさきまぐろきっぷ</label>
     <%= image_tag "IMG_20190318_141726.jpg", class:"ticket-image" %>
-    <%= image_tag "IMG_20161206_165315.jpg", class:"ticket-image" %>
-    <%= image_tag "PIC00008F.JPG", class:"ticket-image" %>
-    <%= image_tag "ESgyCfRUUAEEF73.jpeg", class:"ticket-image" %>
-    <%= image_tag "IMG_20180906_112710.jpg", class:"ticket-image" %> 
-    <%= image_tag "IMG_20180928_190155.jpg", class:"ticket-image" %>
-    <%= image_tag "IMG_20180906_112615.jpg", class:"ticket-image" %> 
-    <%= image_tag "DSC_0020.JPG", class:"ticket-image" %>
-    <%= image_tag "PIC00008C.JPG", class:"ticket-image" %>
-    <%= image_tag "PIC00008D.JPG", class:"ticket-image" %>
-    <%= image_tag "IMG_20161206_154748.jpg", class:"ticket-image" %>
-    <%= image_tag "IMG_20180211_140053.jpg", class:"ticket-image" %>
-    <%= image_tag "IMG_20161206_164518.jpg", class:"ticket-image" %>
-    <%= image_tag "DSC_0053.JPG", class:"ticket-image" %>
-    <%= image_tag "PIC000088.JPG", class:"ticket-image" %>
-    <%= image_tag "IMG_20180211_123458.jpg", class:"ticket-image" %>
-    <%= image_tag "DSC_0019.JPG", class:"ticket-image" %>
-    <%= image_tag "DSC_0025.JPG", class:"ticket-image" %>
-    <%= image_tag "DSC_0009.JPG", class:"ticket-image" %>
-    <%= image_tag "DSC_0042.JPG", class:"ticket-image" %>
+    <a class="dc1">コスパ最強！！追加料金なし！¥3,570で、美味しいまぐろと観光を堪能できる大人気のあのきっぷです。</a>
   </div>
-  <div class="ticket-box">
-    <h1>首都圏 鉄道お得きっぷの旅</h1>
-    <h2>お得きっぷを検索する</h2>
-    <div class="ticket-title">誰と？</div>
-    <%= f.collection_select(:user_id, User.all, :id, :name, {}, {class:"select-box"}) %>
-    <div class="ticket-title">どんなところへ？</div>
-    <%= f.collection_select(:situation_id, Situation.all, :id, :name, {}, {class:"select-box"}) %>
-    <div class="ticket-title">いくらで？</div>
-    <%= f.collection_select(:price_id, Price.all, :id, :name, {}, {class:"select-box"}) %>
-    <%= f.submit "実行する" ,class:"btn" %>
+  <div class="yokosuka">
+    <label class="p2">よこすか満喫きっぷ</label>
+    <%= image_tag "DFIxS7MVYAAmryb.jpeg", class:"ticket-image" %> 
+    <a class="dc2">港町の「食べる」と「遊ぶ」を¥3,100で！海軍カレーやネイビーバーガーを食べて、お土産もゲット！</a>
+  </div>
+  <div class="yokohama">
+    <label class="p3">横濱中華街旅グルメきっぷ</label>
+    <%= image_tag "Eh7KFDNUMAAoBMN.jpeg", class:"ticket-image" %> 
+    <a class="dc3">¥3,000で横浜中華街名店のスペシャルコースを満喫！インスタスポットをめぐる楽しい旅の始まり！</a>
+  </div>
+  <div class="chichibu">
+    <label class="p4">秩父漫遊きっぷ</label>
+    <%= image_tag "EB11OZeVAAAa1XJ.jpeg", class:"ticket-image" %>
+    <a class="dc4">雄大な自然でリフレッシュ!お代は¥2,230!「漫遊まる得クーポン券」で温泉もグルメもショッピングも！</a>
+  </div>
+  <div class="tobu">
+    <label class="p5">東武ワールドスクウェアクーポン</label>
+    <%= image_tag "IMG_20180906_112710.jpg", class:"ticket-image" %> 
+    <a class="dc5">世界一周旅行が￥4,850！？ガリバー気分で世界中の文化遺産を巡った帰りは、日帰り入浴券で温泉へゴー！</a>
   </div>
 </div>
 <% end %>

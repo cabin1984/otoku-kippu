@@ -1,0 +1,152 @@
+body{
+  background-color: pink;
+}
+
+h1{
+  background-color: greenyellow;
+  color: green;
+  font-size: 35px;
+  font-style: italic;
+  letter-spacing: 0.05em;
+}
+
+.solid_line{
+  border-top: solid 5px green;
+  border-bottom: solid 5px green;
+}
+
+.ticket-discription{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.misaki{
+  background-color: aqua;
+  height: 620px;
+  width: 20vw;
+}
+
+.yokosuka{
+  background-color: royalblue;
+  height: 620px;
+  width: 20vw;
+}
+
+.yokohama{
+  background-color: orange;
+  height: 620px;
+  width: 20vw;
+}
+
+.chichibu{
+  background-color: springgreen;
+  height: 620px;
+  width: 20vw;
+}
+
+.tobu{
+  background-color: orangered;
+  height: 620px;
+  width: 20vw;
+}
+
+.p1{
+  background: blue;
+  border: 1px solid blue;
+  color: white;
+  width: 20vw;
+  height: 50px;
+  font-size: 19px;
+  margin-top: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.p2{
+  background: purple;
+  border: 1px solid purple;
+  color: white;
+  width: 20vw;
+  height: 50px;
+  font-size: 19px;
+  margin-top: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.p3{
+  background: crimson;
+  border: 1px solid crimson;
+  color: white;
+  width: 25vw;
+  height: 50px;
+  font-size: 19px;
+  transform: scaleX(0.5);
+  margin-top: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.p4{
+  background: darkgreen;
+  border: 1px solid darkgreen;
+  color: white;
+  width: 20vw;
+  height: 50px;
+  font-size: 19px;
+  margin-top: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.p5{
+  background: yellow;
+  border: 1px solid yellow;
+  color: black;
+  width: 20vw;
+  height: 50px;
+  font-size: 19px;
+  margin-top: 5px;
+  text-decoration: none;
+}
+
+.dc1{
+  font-size: 38px;
+  color: blue;
+  font-weight: bold;
+  font-style: oblique;
+  font-family: Impact,Charcoal; 
+}
+
+.dc2{
+  font-size: 38px;
+  color: purple;
+  font-weight: bold;
+  font-style: oblique;
+  font-family: Impact,Charcoal; 
+}
+
+.dc3{
+  font-size: 38px;
+  color: crimson;
+  font-weight: bold;
+  font-style: oblique;
+  font-family: Impact,Charcoal; 
+}
+
+.dc4{
+  font-size: 38px;
+  color: darkgreen;
+  font-weight: bold;
+  font-style: oblique;
+  font-family: Impact,Charcoal; 
+}
+
+.dc5{
+  font-size: 38px;
+  color: yellow;
+  font-weight: bold;
+  font-style: oblique;
+  font-family: Impact,Charcoal; 
+}
